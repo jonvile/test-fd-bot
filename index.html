@@ -8,18 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A web page</title>
 	<script>
-	      window.fcWidgetMessengerConfig = {
-	        config: {
-	          disableNotifications: true
-	        }
-	      };
-		  window.fcWidget.setExternalId("johnny.chicken@nobody.com");
-
-		  // To set user name
-		  window.fcWidget.user.setFirstName("Johny Chicken");
-
-		  // To set user email
-		  window.fcWidget.user.setEmail("john.doe@gmail.com");
+		window.fcSettings = {
+		    onInit: function() {
+		      window.fcWidget.setExternalId("john.doe1987");
+		      window.fcWidget.user.setFirstName("John Doe");
+		      window.fcWidget.user.setEmail("john.doe@gmail.com");
+		      //window.fcWidget.user.setProperties({
+		      //  plan: "Pro",                 // meta property 1
+		      //  status: "Active"                // meta property 2
+				  //});
+			  }
 	    </script>
 	<script
 	src='//eu.fw-cdn.com/12962653/918132.js'
