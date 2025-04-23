@@ -10,11 +10,16 @@
 	<script>
 		window.fcSettings = {
 		    onInit: function() {
-		      window.fcWidget.setExternalId("john.doe1987");
-		      window.fcWidget.user.setFirstName("John Doe");
-		      window.fcWidget.user.setEmail("john.doe@gmail.com");
+		      window.fcWidget.setExternalId("john.doe1978");
+		      window.fcWidget.user.setFirstName("John Doe II");
+		      window.fcWidget.user.setEmail("john.doe2@gmail.com");
 		      window.fcWidget.user.setProperties({
-				  last_url: window.location.href
+					cf_last_url: window.location.href,
+				  cf_band: 8.5,
+				  cf_test_type: 'Academic',
+				  cf_test_date: '2025-12-03',
+				  cf_package_name: 'Advantage 3 months',
+				  cf_school: 'IELTS Ready Premium (65877)'
 		      //  status: "Active"                // meta property 2
 			  });
 			}
@@ -30,3 +35,8 @@
   <p>A paragraph</p>
   </body>
 </html>
+
+cf_band
+cf_test_type
+cf_test_date
+cf_package_name
